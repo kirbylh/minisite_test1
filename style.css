@@ -64,3 +64,8 @@
 #news{
 	margin-bottom:5%;
 }
+
+#embed{
+	display:none;
+	text-align: center;
+}

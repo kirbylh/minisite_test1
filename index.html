@@ -17,6 +17,19 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel = "icon" type = "image/png" href = "football.png">
+
+	<script>
+	    function toggle(elementId) {
+	      const element = document.getElementById(elementId);
+	      if (element.style.display === "none") {
+	        element.style.display = "block";
+	      } else {
+	        element.style.display = "none";
+	      }
+	    }
+  </script>
+
+
 </head>
 <body>
 
@@ -76,7 +89,7 @@
 			  	<div class="card-body">
 			    	<h5 class="card-title">News Title</h5>
 			    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			    	<a class="btn btn-outline-secondary" href="#" role="button">Learn More</a>
+			    	<a class="btn btn-outline-secondary" role="button" onclick="toggle(`embed`)">Learn More</a>
 			  	</div>
 			</div>
 			<div class="card" style="width: 18rem;">
@@ -84,7 +97,7 @@
 			  	<div class="card-body">
 			    	<h5 class="card-title">News Title</h5>
 			    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			    	<a class="btn btn-outline-secondary" href="#" role="button">Learn More</a>
+			    	<a class="btn btn-outline-secondary" role="button" onclick="toggle(`embed`)">Learn More</a>
 			  	</div>
 			</div>
 			<div class="card" style="width: 18rem;">
@@ -92,37 +105,18 @@
 			  	<div class="card-body">
 			    	<h5 class="card-title">News Title</h5>
 			    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			    	<a class="btn btn-outline-secondary" href="#" role="button">Learn More</a>
+			    	<a class="btn btn-outline-secondary" role="button" onclick="toggle(`embed`)">Learn More</a>
 			  	</div>
 			</div>
 		</div>
-		<div class='rows'>
-			<div class="card" style="width: 18rem;">
-			  	<img class='newspic' src="https://images.unsplash.com/photo-1511886929837-354d827aae26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" class="card-img-top" alt="...">
-			  	<div class="card-body">
-			    	<h5 class="card-title">News Title</h5>
-			    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			    	<a class="btn btn-outline-secondary" href="#" role="button">Learn More</a>
-			  	</div>
-			</div>
-			<div class="card" style="width: 18rem;">
-			  	<img class='newspic' src="https://images.unsplash.com/photo-1511886929837-354d827aae26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" class="card-img-top" alt="...">
-			  	<div class="card-body">
-			    	<h5 class="card-title">News Title</h5>
-			    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			    	<a class="btn btn-outline-secondary" href="#" role="button">Learn More</a>
-			  	</div>
-			</div>
-			<div class="card" style="width: 18rem;">
-			  	<img class='newspic' src="https://images.unsplash.com/photo-1511886929837-354d827aae26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" class="card-img-top" alt="...">
-			  	<div class="card-body">
-			    	<h5 class="card-title">News Title</h5>
-			    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			    	<a class="btn btn-outline-secondary" href="#" role="button">Learn More</a>
-			  	</div>
-			</div>
-		</div>
+		
 	</div>
+
+	<div id="embed">
+		<iframe src="https://kirbylh.github.io/minisite_test1/minisite.html" style = "width:80%; height:600px;"></iframe>
+	</div>
+
+
 
 </body>
 </html>
